@@ -9,23 +9,32 @@
 </head>
 
 <body>
-    <header class="Encabezado_Principal">
-        <div class="Logo">
-            <img src="/IMG/CD.PD.png" alt="logo">
-            <span>CD.PD</span>
-        </div>
+    <header class="header">
+        <!-- Branding -->
+        <section class="logo">
+            <img src="/SRC/IMG/logo.png" alt="">
+            <span class="brand-text">CD.Live</span>
+        </section>
+        <!-- Search -->
+        <section class="Buscador">
+            <button type="submit" class="buscar">
+                <span class="material-symbols-outlined"> search</span>
+            </button>
+            <input placeholder="Buscar..." class="cajaBusqueda" />
+            <button type="button" class="explorar">
+                <span class="material-symbols-outlined">album</span>
+            </button>
+        </section>
 
-        <div class="search">
-            <input type="text" placeholder="Buscar...">
-            <button>🔍</button>
-        </div>
-
-        <div class="User_Actions">
-            <img src="/IMG/icons8-shopping-cart-24.png" alt="">
-            <a href="">Iniciar Sesión</a>
-            <img src="/IMG/Download_buttonn.png" alt="">
-            <img src="/IMG/atención_al_cliente.png.png" alt="">
-        </div>
+        <!-- Actions -->
+        <nav class="UsuarioCarrito">
+            <a class="cuenta">
+                <span class="material-symbols-outlined">person</span>
+            </a>
+            <a class="carrito">
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </a>
+        </nav>
     </header>
      <nav>
         <ul>
@@ -51,7 +60,7 @@
         </section>
 
         <section class="album-cover">
-            <img src="/img/ameri.webp" alt="Vinilo Ameri">
+            <img src="/SRC/IMG/AMERI.png" alt="Vinilo Ameri">
             <button class="buy-btn">Comprar</button>
         </section>
     </main>
@@ -60,15 +69,15 @@
         <h3>OTROS ALBUMES</h3>
         <div class="album-list">
             <div class="album-item">
-                <img src="/IMG/modo diablo.webp" alt="Modo Diablo">
+                <img src="/SRC/IMG/modo diablo.webp" alt="Modo Diablo">
                 <p>MODO DIABLO</p>
             </div>
             <div class="album-item">
-                <img src="/img/super sangre joven.webp" alt="Super Sangre Joven">
+                <img src="/SRC/IMG/super sangre joven.webp" alt="Super Sangre Joven">
                 <p>SUPER SANGRE JOVEN</p>
             </div>
             <div class="album-item">
-                <img src="/img/temporada de reggaeton.webp" alt="Temporada de Reggaetón">
+                <img src="/SRC/IMG/temporada de reggaeton.webp" alt="Temporada de Reggaetón">
                 <p>TEMPORADA DE REGGAETON</p>
             </div>
         </div>
