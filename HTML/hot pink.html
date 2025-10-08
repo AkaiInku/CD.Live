@@ -11,7 +11,7 @@
 <body>
      <header class="header">
     <section class="logo">
-      <img src="./SRC/IMG/Logo/logo.png" alt="">
+      <img src="/SRC/IMG/Logo/logo.png" alt="">
       <span class="brand-text">CD.Live</span>
     </section>
     <section class="Buscador">
@@ -23,6 +23,99 @@
         <span class="material-symbols-outlined">album</span>
       </button>
     </section>
+
+    <nav class="UsuarioCarrito">
+      <a class="Cuenta">
+        <span class="material-symbols-outlined">person</span>
+      </a>
+<!-- Login oculto -->
+<section class="LoginCuenta" id="LoginCuenta">
+  <div class="LoginContenedor">
+    <Button class="LoginClose" id="LoginClose">X</Button>
+   <!--  <div class="LoginIzquierda">
+      <video src="/SRC/video/308104_medium.mp4" autoplay muted loop></video>
+    </div> -->
+    <div class="LoginDerecha">
+      <form  class="LoginForm"  id="LoginForm">
+        <h3>INICIAR SESIÓN</h3>
+        <input type="text" placeholder="EMAIL" required>
+        <input type="password" placeholder="CLAVE" required>
+        <button type="submit">INGRESAR</button>
+
+        <p class="Continuar">O continúa con</p>
+        <div class="Social">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-apple"></i>
+        </div>
+        <p class="Registro">¿YA TIENES UNA CUENTA?</p>
+         <button class="BotonRegistro" id="BotonRegistro">CREAR CUENTA</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Registro oculto -->
+<section class="RegistroCuenta" id="RegistroCuenta">
+  <div class="RegistroContenedor">
+    <div class="RegistroBotones">
+    <button class="RegistroBack" id="RegistroBack"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="RegistroClose" id="RegistroClose">X</button>
+    </div>
+    <!-- <div class="RegistroIzquierda">
+      <video src="./SRC/video/308104_medium.mp4" autoplay muted loop></video>
+    </div> -->
+
+    <div class="RegistroDerecha">
+      <form  class="RegistroForm"   id="RegistroForm">
+        <h3>REGISTRO</h3>
+        <input type="text" placeholder="NOMBRE COMPLETO" required>
+        <input type="tel" placeholder="CELULAR" required>
+        <input type="email" placeholder="EMAIL" required>
+        <input type="email" placeholder="REPETIR EMAIL" required>
+        <input type="text" placeholder="PAÍS" required>
+        <input type="text" placeholder="CIUDAD" required>
+        <input type="password" placeholder="CLAVE" required>
+        <input type="password" placeholder="REPETIR CLAVE" required>
+
+        <button type="submit" class="RegistroBoton">CREAR CUENTA</button>
+      </form>
+    </div>
+  </div>
+</section>
+ <!-- Registrop de Tarjeta -->
+  <section class="TarjetaCuenta" id="TarjetaCuenta">
+    <div class="TarjetaContenedor">
+      <button class="TarjetaClose" id="TarjetaClose">×</button>
+      <h3>Registrar Tarjeta</h3>
+
+      <form id="TarjetaForm">
+        <label>Número de tarjeta</label>
+        <input type="text" id="NumeroTarjeta" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+        <label>Nombre del titular</label>
+        <input type="text" id="TitularTarjeta" placeholder="Como aparece en la tarjeta" required>
+
+        <div class="TarjetaDatosExtra">
+          <div>
+            <label>Vencimiento</label>
+            <input type="text" id="FechaVencimiento" placeholder="MM/AA" maxlength="5" required>
+          </div>
+          <div>
+            <label>CVV</label>
+            <input type="text" id="CVV" placeholder="123" maxlength="3" required>
+          </div>
+        </div>
+
+        <button type="submit" class="TarjetaBoton">Guardar tarjeta</button>
+      </form>
+    </div>
+  </section>
+
+      <a class="carrito">
+        <span class="material-symbols-outlined">shopping_cart</span>
+      </a>
+    </nav>
+  </header>
 
     <main class="container">
         <section class="album-info">
@@ -38,7 +131,7 @@
         </section>
 
         <section class="album-cover">
-            <img src="/img/hot pink.webp" alt="Vinilo HOT PINK">
+            <img src="/SRC/IMG/img adicionales/HOT PINK.png" alt="Vinilo HOT PINK">
             <button class="buy-btn">Comprar</button>
         </section>
     </main>
@@ -47,15 +140,15 @@
         <h3>OTROS ALBUMES</h3>
         <div class="album-list">
             <div class="album-item">
-                <img src="/img/planet her.webp" alt="PLANET HER">
+                <img src="/SRC/IMG/img adicionales/planet her.webp" alt="PLANET HER">
                 <p>PLANET HER</p>
             </div>
             <div class="album-item">
-                <img src="/img/attention.webp" alt="ATTENTION">
+                <img src="/SRC/IMG/img adicionales/attention.webp" alt="ATTENTION">
                 <p>ATTENTION</p>
             </div>
             <div class="album-item">
-                <img src="/img/amala.webp" alt="AMALA">
+                <img src="/SRC/IMG/img adicionales/amala.webp" alt="AMALA">
                 <p>AMALA</p>
             </div>
         </div>
@@ -81,7 +174,7 @@
       </a>
     </div>
   </footer>
-
+<script src="/JS/Index.js"></script>
 </body>
 
 </html>
