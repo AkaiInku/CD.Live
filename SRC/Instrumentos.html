@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fuentes -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+<!-- Estilos -->
+<link rel="stylesheet" href="../CSS/global.css">
+<link rel="stylesheet" href="../CSS/Instrumentos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+    <section class="logo">
+      <img src="/SRC/IMG/Logo/logo.png" alt="">
+      <span class="brand-text">CD.Live</span>
+    </section>
+    <section class="Buscador">
+      <button type="submit" class="buscar">
+        <span class="material-symbols-outlined"> search</span>
+      </button>
+      <input placeholder="Buscar..." class="cajaBusqueda" />
+      <button type="button" class="explorar">
+        <span class="material-symbols-outlined">album</span>
+      </button>
+    </section>
+
+    <nav class="UsuarioCarrito">
+      <a class="cuenta">
+        <span class="material-symbols-outlined">person</span>
+      </a>
+      <a class="carrito">
+        <span class="material-symbols-outlined">shopping_cart</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="titulo">
+    <h1>INSTRUMENTOS</h1>
+  </div>
+
+  <section class="productos">
+    <div class="contenedorProductos">
+      <div class="producto" data-categoria="cuerda">
+  <img src="/SRC/IMG/Intrumentos/LogoCuerda.png" alt="Cuerda">
+  <p>Cuerda</p>
+</div>
+<div class="producto" data-categoria="viento">
+  <img src="/SRC/IMG/Intrumentos/LogoViento.png" alt="Viento">
+  <p>Viento</p>
+</div>
+<div class="producto" data-categoria="percusion">
+  <img src="/SRC/IMG/Intrumentos/LogoPercusion.png" alt="Percusión">
+  <p>Percusión</p>
+</div>
+<div class="producto" data-categoria="electricos">
+  <img src="/SRC/IMG/Intrumentos/LogoElectricos.png" alt="Electrónicos">
+  <p>Electrónicos</p>
+</div>
+    </div>
+  </section>
+
+  <div class="titulo">
+    <h2>Productos</h2>
+  </div>
+
+ <section class="Instrumentos">
+        <div class="contenedor-vendidos" id="lista-Instrumentos"></div>
+ </section>
+
+  <script src="/JS/Instrumentos.js"></script>
+</body>
+</html>
