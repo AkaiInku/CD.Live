@@ -76,12 +76,12 @@ h2 {
 .contenedor-vendidos {
   display: flex;
   flex-wrap: wrap;
-  gap: 120px; /* Espacio entre tarjetas, ajusta según tu diseño */
-  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 120px; 
+  justify-content: center; 
 }
 
 .card {
-  width: 250px; /* O el ancho que prefieras */
+  width: 250px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
