@@ -328,8 +328,8 @@ button:hover {
   border: 2px solid rgb(255, 255, 255);
   position: relative;
   animation: FadeIn 0.3s ease-out;
-}
-.RegistroBotones {
+
+  .RegistroBotones {
   position: absolute;
   top: 10px;
   right: 14px;
@@ -337,7 +337,6 @@ button:hover {
   gap: 10px;
   z-index: 10;
 }
-
 .RegistroBack,
 .RegistroClose {
   background: transparent;
@@ -348,7 +347,6 @@ button:hover {
   cursor: pointer;
   transition: transform 0.2s, color 0.2s;
 }
-
 .RegistroBack:hover,
 .RegistroClose:hover {
   transform: scale(1.2);
@@ -364,7 +362,6 @@ button:hover {
   object-fit: cover;
 }
 }
-
 .RegistroDerecha {
   flex: 1;
   background: #0f0f0f;
@@ -373,7 +370,6 @@ button:hover {
   align-items: center;
   padding: 25px;
 }
-
 .RegistroForm {
   display: flex;
   flex-direction: column;
@@ -398,6 +394,7 @@ input {
   text-align: center;
 }
 }
+
 .RegistroBoton {
   background: #c62828;
   border: none;
@@ -410,15 +407,17 @@ input {
   transition: background 0.3s;
   margin-top: 10px;
 }
-
 .RegistroBoton:hover {
   background: #a61e1e;
 }
 }
 
+}
 .RegistroCuenta.Active {
   display: flex;
 }
+
+
 
 /*Targeta*/
 .TarjetaCuenta {
@@ -430,6 +429,7 @@ input {
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+ 
   z-index: 4000;
 }
 
@@ -440,6 +440,7 @@ input {
 .TarjetaContenedor {
   background: #111;
   color: #fff;
+  border: 2px solid rgb(255, 255, 255);
   width: 420px;
   border-radius: 20px;
   padding: 25px 30px;
