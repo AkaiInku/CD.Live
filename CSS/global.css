@@ -31,11 +31,18 @@ body {
         align-items: center;
         gap: 10px;
         font-size: 30px;
+        text-decoration: none;
+        color: white;
+
 
         img {
             width: 70px;
             height: 70px;
             display: block;
+        }
+
+        span{
+          font-size: 40px;
         }
     }
 
@@ -106,7 +113,7 @@ body {
         text-decoration: none;
         border-radius: 999px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, .35) inset;
-
+        user-select: none;   
         .material-symbols-outlined,
         .material-symbols-outlined {
             font-size: 50px;

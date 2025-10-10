@@ -85,6 +85,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-decoration: none;
+        color: white;
 
         img {
             width: 180px;
@@ -98,6 +100,7 @@
             font-size: 25px;
             font-weight: bold;
             margin-top: 20px;
+            
         }
 
     }
@@ -279,11 +282,13 @@ p {
 
 /* Artistas Más Vendidos */
 .artistasMasVendidos {
-  background: #000;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  max-width: 100%;
+  display: flex;
+   justify-items: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 30px 0;
+  
+  
 h2 {
   font-size: 24px;
   font-weight: 600;
@@ -292,12 +297,14 @@ h2 {
 }
 
 .contenedor-vendidos {
-  display: flex;
-  flex-wrap: wrap;         
+  display: grid;
+  grid-template-columns: repeat(4,1fr);  
   justify-content: center; 
-  column-gap: 10%;
-  row-gap: 60px;               
-  padding: 20px;
+  gap: 200px;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .card {
   width: 250px;
