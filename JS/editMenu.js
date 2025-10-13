@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  
   // Evitar que el menú se cierre al hacer clic dentro de él
   dropdownMenu.addEventListener('click', function (e) {
     e.stopPropagation();
