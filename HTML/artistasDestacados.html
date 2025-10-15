@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CD.Live - Tienda</title>
+  <!-- Enlaza tu CSS aquí -->
+  <link rel="stylesheet" href="/CSS/artistasDestacados.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <section class="logo">
+      <img src="/SRC/IMG/Logo/logo.png" alt="">
+      <span class="brand-text">CD.Live</span>
+    </section>
+    <section class="Buscador">
+      <button type="submit" class="buscar">
+        <span class="material-symbols-outlined"> search</span>
+      </button>
+      <input placeholder="Buscar..." class="cajaBusqueda" />
+      <button type="button" class="explorar">
+        <span class="material-symbols-outlined">album</span>
+      </button>
+    </section>
+
+    <nav class="UsuarioCarrito">
+      <a class="Cuenta">
+        <span class="material-symbols-outlined">person</span>
+      </a>
+
+<!-- Login oculto -->
+<section class="LoginCuenta" id="LoginCuenta">
+  <div class="LoginContenedor">
+    <Button class="LoginClose" id="LoginClose">X</Button>
+    <div class="LoginIzquierda">
+      <video src="/SRC/video/308104_medium.mp4" autoplay muted loop></video>
+    </div>
+    <div class="LoginDerecha">
+      <form  class="LoginForm"  id="LoginForm">
+        <h3>INICIAR SESIÓN</h3>
+        <input type="text" placeholder="EMAIL" required>
+        <input type="password" placeholder="CLAVE" required>
+        <button type="submit">INGRESAR</button>
+
+        <p class="Continuar">O continúa con</p>
+        <div class="Social">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-apple"></i>
+        </div>
+        <p class="Registro">¿YA TIENES UNA CUENTA?</p>
+         <button class="BotonRegistro" id="BotonRegistro">CREAR CUENTA</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Registro oculto -->
+<section class="RegistroCuenta" id="RegistroCuenta">
+  <div class="RegistroContenedor">
+    <div class="RegistroBotones">
+    <button class="RegistroBack" id="RegistroBack"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="RegistroClose" id="RegistroClose">X</button>
+    </div>
+    <div class="RegistroIzquierda">
+      <video src="/SRC/video/308104_medium.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="RegistroDerecha">
+      <form  class="RegistroForm"   id="RegistroForm">
+        <h3>REGISTRO</h3>
+        <input type="text" placeholder="NOMBRE COMPLETO" required>
+        <input type="tel" placeholder="CELULAR" required>
+        <input type="email" placeholder="EMAIL" required>
+        <input type="email" placeholder="REPETIR EMAIL" required>
+        <input type="text" placeholder="PAÍS" required>
+        <input type="text" placeholder="CIUDAD" required>
+        <input type="password" placeholder="CLAVE" required>
+        <input type="password" placeholder="REPETIR CLAVE" required>
+
+        <button type="submit" class="RegistroBoton">CREAR CUENTA</button>
+      </form>
+    </div>
+  </div>
+</section>
+ <!-- Registrop de Tarjeta -->
+  <section class="TarjetaCuenta" id="TarjetaCuenta">
+    <div class="TarjetaContenedor">
+      <button class="TarjetaClose" id="TarjetaClose">×</button>
+      <h3>Registrar Tarjeta</h3>
+
+      <form id="TarjetaForm">
+        <label>Número de tarjeta</label>
+        <input type="text" id="NumeroTarjeta" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+        <label>Nombre del titular</label>
+        <input type="text" id="TitularTarjeta" placeholder="Como aparece en la tarjeta" required>
+
+        <div class="TarjetaDatosExtra">
+          <div>
+            <label>Vencimiento</label>
+            <input type="text" id="FechaVencimiento" placeholder="MM/AA" maxlength="5" required>
+          </div>
+          <div>
+            <label>CVV</label>
+            <input type="text" id="CVV" placeholder="123" maxlength="3" required>
+          </div>
+        </div>
+
+        <button type="submit" class="TarjetaBoton">Guardar tarjeta</button>
+      </form>
+    </div>
+  </section>
+
+      <a class="carrito">
+        <span class="material-symbols-outlined">shopping_cart</span>
+      </a>
+    </nav>
+  </header>
+  <!-- HERO / CATEGORIAS CIRCULARES -->
+  <section class="categories-hero">
+    <div class="container hero-inner">
+      <div class="category">
+        <div class="category-circle">
+          <img src="/SRC/IMG/img adicionales/casete circulo.jpeg" alt="Casete" />
+        </div>
+        <div class="category-label">Casete</div>
+      </div>
+
+      <div class="category">
+        <div class="category-circle">
+          <img src="/SRC/IMG/img adicionales/vinilo circulo.jpeg" alt="Vinilos" />
+        </div>
+        <div class="category-label">Vinilos</div>
+      </div>
+
+      <div class="category">
+        <div class="category-circle">
+          <img src="/SRC/IMG/img adicionales/CD circulo.jpeg" alt="CD" />
+        </div>
+        <div class="category-label">CD</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTROS / BARRA -->
+  <section class="filter-bar">
+    <div class="container filters-inner">
+      <button class="filter-item">Preventa</button>
+      <button class="filter-item">Promoción</button>
+      <button class="filter-item">Edición</button>
+
+      <div class="filter-dropdown">
+        <button class="filter-item filter-toggle" aria-haspopup="true" aria-expanded="false">
+          Edición ▾
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-label="Opciones de edición">
+          <li role="menuitem"><button>Estándar</button></li>
+          <li role="menuitem"><button>Limitada</button></li>
+        </ul>
+      </div>
+
+      <button class="filter-item">Precios</button>
+      <div class="spacer"></div>
+      <button class="filter-item currency">$</button>
+      <button class="filter-item currency">$</button>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <main class="container products-section" role="main">
+    <div class="products-grid">
+      <!-- PRODUCTO 1 -->
+      <article class="product-card">
+        <div class="product-media">
+          <img src="/SRC/IMG/img adicionales/DANGEROUS.png" alt="Dangerous - Vinilo" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">DANGEROUS</h3>
+          <p class="product-desc">Álbum de Michael Jackson. NUEVO en formato Vinilo</p>
+          <p class="product-price">$200.000</p>
+          <a href="#" class="btn buy-btn" role="button">COMPRAR</a>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 2 -->
+      <article class="product-card">
+        <div class="product-media">
+          <img src="/SRC/IMG/img adicionales/IGOR.png" alt="IGOR - Vinilo" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">IGOR</h3>
+          <p class="product-desc">Álbum de Tyler The Creator</p>
+          <p class="product-price">$200.000</p>
+          <a href="#" class="btn buy-btn" role="button">COMPRAR</a>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 3 -->
+      <article class="product-card">
+        <div class="product-media">
+          <img src="/SRC/IMG/Vinilos/OKComputer.png" alt="OK Computer - Vinilo" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">OK COMPUTER</h3>
+          <p class="product-desc">Álbum de RadioHead. NUEVO en formato Vinilo</p>
+          <p class="product-price">$200.000</p>
+          <a href="#" class="btn buy-btn" role="button">COMPRAR</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Acerca de nosotros</a>
+      <a href="#">Contacto</a>
+      <a href="#">Política de Privacidad</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://facebook.com/tu_pagina" aria-label="Facebook" target="_blank" rel="noopener">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com/tu_pagina" aria-label="Instagram" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://x.com/tu_pagina" aria-label="X (Twitter)" target="_blank" rel="noopener">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://wa.me/57XXXXXXXXXX" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="/JS/editMenu.js"></script>
+  <script src="/JS/Index.js"></script>
+</body>
+</html>
