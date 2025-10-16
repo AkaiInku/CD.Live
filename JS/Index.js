@@ -1,46 +1,4 @@
-if (typeof Instrumentos !== "undefined" && document.getElementById("lista-instrumentos")) {
-  const masVendidos = Instrumentos.filter(i => i.masComprado);
-  renderInstrumentos(masVendidos, "lista-instrumentos");
-}
 
-/* ===========================
- 🎤 ARTISTAS MÁS VENDIDOS
-=========================== */
-const artistasMasVendidos = [
-  { nombre: "X 100PRE", descripcion: "Bad Bunny", precio: 175000, imagen: "SRC/IMG/Vinilos/X100PRE.jpg" },
-  { nombre: "Génesis", descripcion: "Peso Pluma", precio: 72226, imagen: "SRC/IMG/Vinilos/genesis2.png" },
-  { nombre: "OK Computer", descripcion: "Radiohead", precio: 250000, imagen: "SRC/IMG/Vinilos/OKComputer.png" },
-  { nombre: "Ameri", descripcion: "Duki", precio: 150000, imagen: "SRC/IMG/Vinilos/ameri.png" },
-  { nombre: "Hot Pink", descripcion: "Doja Cat", precio: 200000, imagen: "SRC/IMG/Vinilos/HotPink.png" },
-  { nombre: "Plastic Beach", descripcion: "Gorillaz", precio: 218000, imagen: "SRC/IMG/Vinilos/plastibeach.png" },
-  { nombre: "That’s the Spirit", descripcion: "BMTH", precio: 259000, imagen: "SRC/IMG/Vinilos/That’sTheSpirit.png" },
-  { nombre: "All Eyez on Me", descripcion: "Tupac", precio: 706600, imagen: "SRC/IMG/Vinilos/AllEyezOnMe.png" },
-];
-
-function renderCards(lista, contenedorId) {
-  const contenedor = document.getElementById(contenedorId);
-  if (!contenedor) return;
-  contenedor.innerHTML = "";
-
-  lista.forEach(item => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.innerHTML = `
-      <img src="${item.imagen}" alt="${item.nombre}">
-      <div class="card-body">
-        <h3>${item.nombre}</h3>
-        <p>${item.descripcion}</p>
-        <span class="precio">$${item.precio.toLocaleString("es-CO")}</span>
-        <button class="btn-comprar">COMPRAR</button>
-      </div>
-    `;
-    contenedor.appendChild(card);
-  });
-}
-
-if (document.getElementById("lista-artistas")) {
-  renderCards(artistasMasVendidos, "lista-artistas");
-}
 
 /* ===========================
  🎠 CARRUSEL DE ARTISTAS DESTACADOS
