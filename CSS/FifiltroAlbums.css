@@ -15,13 +15,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   gap: 0;
-  overflow: visible; /* ✅ permite que el menú se muestre fuera del contenedor */
-  background: #111;
-  border: 1px solid #333;
   width: 100%;
-  max-width: 1300px;
   position: relative;
   z-index: 10;
 }
