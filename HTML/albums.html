@@ -15,8 +15,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" />
   <!-- Estilos -->
   <link rel="stylesheet" href="../CSS/global.css">
-  <link rel="stylesheet" href="/CSS/artistasDestacados.css" />
-  <link rel="stylesheet" href="../CSS/Instrumentos.css">
+  <link rel="stylesheet" href="/CSS/albums.css" />
+  <link rel="stylesheet" href="../CSS/barraSeleccion.css">
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/FifiltroAlbums.css">
 </head>
 <body>
   <!-- HEADER -->
@@ -131,7 +133,7 @@
   <!-- HERO / CATEGORIAS CIRCULARES -->
     <section class="productos">
      <div class="titulo">
-    <h1>Albunes</h1>
+    <h1>AlBUMS</h1>
   </div>
     <div class="contenedorProductos">
       <div class="producto" data-categoria="Vinilo">
@@ -149,73 +151,41 @@
     </div>
   </section>
 
-  <!-- FILTROS / BARRA -->
-  <section class="filter-bar">
-    <div class="container filters-inner">
-      <button class="filter-item">Preventa</button>
-      <button class="filter-item">Promoción</button>
-      <button class="filter-item">Edición</button>
-
-      <div class="filter-dropdown">
-        <button class="filter-item filter-toggle" aria-haspopup="true" aria-expanded="false">
-          Edición ▾
-        </button>
-        <ul class="dropdown-menu" role="menu" aria-label="Opciones de edición">
-          <li role="menuitem"><button>Estándar</button></li>
-          <li role="menuitem"><button>Limitada</button></li>
-        </ul>
-      </div>
-
-      <button class="filter-item">Precios</button>
-      <div class="spacer"></div>
-      <button class="filter-item currency">$</button>
-      <button class="filter-item currency">$</button>
+  <!-- filtro -->
+<section class="filtros">
+  <div class="contenedor-filtros">
+    <!-- Edición -->
+    <div class="filtro-desplegable">
+      <button class="boton-filtro boton-desplegable">Edición </button>
+      <ul class="menu-desplegable">
+        <li><button data-edicion="Estandar">Estándar</button></li>
+        <li><button data-edicion="Limitada">Limitada</button></li>
+      </ul>
     </div>
+    <!-- Precio -->
+    <div class="filtro-desplegable">
+      <button class="boton-filtro boton-desplegable-precio">Precio </button>
+      <ul class="menu-desplegable-precio">
+        <li><button data-precio="asc">Menor a Mayor</button></li>
+        <li><button data-precio="desc">Mayor a Menor</button></li>
+      </ul>
+    </div>
+    <!-- Promoción -->
+    <button class="boton-filtro" data-filtro="Promocion">Promoción</button>
+    <!-- Preventa -->
+    <button class="boton-filtro" data-filtro="Preventa">Preventa</button>
+  </div>
+</section>
+
+
+  <div class="titulo">
+    <h2>Álbums</h2>
+  </div>
+  
+    <section class="albums">
+  <div class="contenedor-vendidos" id="lista-albums"></div>
   </section>
-
-  <!-- PRODUCTOS -->
-  <main class="container products-section" role="main">
-    <div class="products-grid">
-      <!-- PRODUCTO 1 -->
-      <article class="product-card">
-        <div class="product-media">
-          <img src="/SRC/IMG/img adicionales/DANGEROUS.png" alt="Dangerous - Vinilo" />
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">DANGEROUS</h3>
-          <p class="product-desc">Álbum de Michael Jackson. NUEVO en formato Vinilo</p>
-          <p class="product-price">$200.000</p>
-          <a href="#" class="btn buy-btn" role="button">COMPRAR</a>
-        </div>
-      </article>
-
-      <!-- PRODUCTO 2 -->
-      <article class="product-card">
-        <div class="product-media">
-          <img src="/SRC/IMG/img adicionales/IGOR.png" alt="IGOR - Vinilo" />
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">IGOR</h3>
-          <p class="product-desc">Álbum de Tyler The Creator</p>
-          <p class="product-price">$200.000</p>
-          <a href="#" class="btn buy-btn" role="button">COMPRAR</a>
-        </div>
-      </article>
-
-      <!-- PRODUCTO 3 -->
-      <article class="product-card">
-        <div class="product-media">
-          <img src="/SRC/IMG/Vinilos/OKComputer.png" alt="OK Computer - Vinilo" />
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">OK COMPUTER</h3>
-          <p class="product-desc">Álbum de RadioHead. NUEVO en formato Vinilo</p>
-          <p class="product-price">$200.000</p>
-          <a href="#" class="btn buy-btn" role="button">COMPRAR</a>
-        </div>
-      </article>
-    </div>
-  </main>
+</section>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -240,9 +210,10 @@
     </div>
   </footer>
 
-  <script src="/JS/editMenu.js"></script>
+  <script src="/JS/albums.js"></script>
   <script src="/JS/Index.js"></script>
   <script src="/JS/LoginYRegistro.js"></script>
 <script src="/JS/RegistroTarjeta.js"></script>
+<script src="/JS/filtroAlbums.js"></script>
 </body>
 </html>

@@ -86,16 +86,34 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
 /* ===========================
- 🎸 MOSTRAR EN INDEX — MÁS VENDIDOS
+ 🎸 MOSTRAR EN INDEX — MÁS VENDIDOS (ADAPTATIVO con matchMedia)
 =========================== */
 document.addEventListener("DOMContentLoaded", () => {
   const contenedorIndex = document.getElementById("lista-instrumentos");
 
   if (contenedorIndex) {
     const masVendidos = Instrumentos.filter(i => i.masComprado);
-    const limiteDeVistas = 4;
-    const productosLimitados = masVendidos.slice(0, limiteDeVistas);
-    renderInstrumentos(productosLimitados, "lista-instrumentos");
+
+    // 📱💻 Detectar el tipo de pantalla con media query (idéntico al CSS)
+    function obtenerLimite() {
+      return window.matchMedia("(max-width: 768px)").matches ? 3 : 4;
+    }
+
+    let limiteDeVistas = obtenerLimite();
+
+    // Render inicial
+    renderInstrumentos(masVendidos.slice(0, limiteDeVistas), "lista-instrumentos");
+
+    // 🎯 Escucha cambios de media query (automático al girar o redimensionar)
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    mediaQuery.addEventListener("change", () => {
+      const nuevoLimite = obtenerLimite();
+      if (nuevoLimite !== limiteDeVistas) {
+        limiteDeVistas = nuevoLimite;
+        renderInstrumentos(masVendidos.slice(0, limiteDeVistas), "lista-instrumentos");
+      }
+    });
   }
 });

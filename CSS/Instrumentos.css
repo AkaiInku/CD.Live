@@ -1,57 +1,5 @@
-.productos {
-    background: #2a2a2a;
-    border-radius: 90px;
-    padding: 5px;
-    text-align: center;
-    margin: 20px auto;
-    width: 95%;
-    max-width: 90%;
-    align-items: center;
 
-
-    h2 {
-        margin-top: 10px;
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .contenedorProductos {
-        display: flex;
-        justify-content: center;
-        gap: 15%;
-        flex-wrap: wrap;
-        margin-bottom: 20PX;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .producto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        p {
-            font-size: 25px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-    }
-
-    .producto img:hover {
-        transform: scale(1.2);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
-    }
-}
+/*PAGINA DE INSTRUMENTOS*/
 
 .titulo{
     margin-top: 10px;
@@ -60,18 +8,25 @@
         margin-bottom: 10px;
 }
 
+.titulo h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: #A1182D;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* 🎸 CONTENEDOR DE INSTRUMENTOS */
+
 .Instrumentos {
   background: #000;
   padding: 20px;
   text-align: center;
   width: 100%;
   max-width: 100%;
-h2 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #fff; 
-}
+
 
 .contenedor-vendidos {
   display: grid;
@@ -83,7 +38,8 @@ h2 {
 }
 
 .card {
-  width:250px; /* O el ancho que prefieras */
+  width:250px;
+  height: auto;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -92,6 +48,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 }
 .card img {
@@ -140,5 +97,5 @@ h2 {
 }
 
 .btn-comprar:hover {
-  background: #444;
+  background: #A1182D;
 }
